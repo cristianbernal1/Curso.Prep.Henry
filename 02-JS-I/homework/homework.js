@@ -43,7 +43,7 @@ function suma(x, y) {
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  return y - x ; 
+  return x - y; 
   
 }
 
@@ -64,8 +64,8 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-    if (x === y) 
-    {return true;
+    if (x === y) {
+    return true;
     } else {
       return false;
     }
@@ -88,10 +88,10 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num < 90) {
-    return true
+  if(num < 90) {
+    return true;
   } else {
-    return false
+    return false;
   }
   
 }
@@ -155,25 +155,25 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  return math.pow (num , exponent)
+  return Math.pow (num , exponent);
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  
+  Math.round (num);
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
- return math.ceil (num); 
+ return Math.ceil(num); 
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return math.Random(0,1)
+  return Math.random();
 }
 
 function esPositivo(numero) {
@@ -181,12 +181,12 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (num === 0) {
+  if(num === 0) {
     return false;
   } else if (num < 0) {
-    return "es negativo"
+    return "Es negativo"
   } else (num > 0) 
-    return "es positivo"
+    return "Es positivo"
 }
 
 
@@ -194,14 +194,14 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código: 
-  return "str" + "!"
+  return str + "!"
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var combinado = nombre + "" + apellido 
+  var combinado = nombre + " " + apellido 
   return combinado;
 }
 
@@ -209,7 +209,7 @@ function obtenerSaludo(nombre){
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "hola" + nombre + "!"
+  return "Hola " + nombre + "!"
 }
 
 
@@ -249,11 +249,13 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if (letra.length > 1) {
-    return "dato incorrecto"
-  } if (letra === a , letra === e , letra === i , letra === o , letra === u) {
-    return "es vocal"
-  } return "dato incorrecto"
+  if(letra.length > 1) {
+    return "Dato incorrecto"
+  } 
+  if(letra === "a" , letra === "e" , letra === "i" , letra === "o" , letra === "u") {
+    return "Es vocal"
+  }
+  return "Dato incorrecto"
   
 }
 
